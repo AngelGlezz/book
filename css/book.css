@@ -1,0 +1,497 @@
+#gif, #cascada, #indepth, #video, #campaña, #insight, #disfraz {
+	display: none;
+}/**/
+
+#page {
+	width: 100%;
+	background-color: #f7f7f7;
+}
+
+#header {
+	background: url('../images/postales/Portada_postales.jpg');
+	width: 100%;
+	height: 245px;
+	position: relative;
+}
+
+#title {
+	width: 300px;
+	height: 35px;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+#main {
+	width: 100%;
+	height: 50px;
+	position: relative;
+	background-color: #8fb532;
+}
+
+#main_inner {
+	width: 845px;
+	height: 17px;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+.item {
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #fff;
+	font-size: 14px;
+	color: #f7f7f7;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+}
+
+.disable {
+	font-weight: 400;
+}
+
+.enable {
+	font-weight: 700;
+}
+
+#postales {
+	padding-left: 0px;
+	width: 69px;
+}
+
+#gifs {
+	width: 31px;
+}
+
+#infografias {
+	width: 94px;
+}
+
+#indepths {
+	width: 70px;
+}
+
+#videos {
+	width: 51px;
+}
+
+#campañas {
+	width: 79px;
+}
+
+#insights {
+	width: 59px;
+}
+
+#disfraces {
+	padding-right: 0px;
+	border: none;
+}
+
+#content {
+	width: 100%;
+	margin-top: 50px;
+	padding-bottom: 100px;
+}
+
+#inner_cont {
+	width: 1150px;
+	margin: auto;
+}
+
+.galery_cont {
+	width: 100%;
+	height: 1150px;
+}
+
+.big, .small {
+	margin-right: 2px;
+	margin-bottom: 2px;
+	float: left;
+}
+
+.big {
+	width: 49.91%;
+    height: 49.9%;
+}
+
+.small {
+	width: 49.82%;
+    height: 49.84%;
+}
+
+.der {
+	margin-right: 0px;
+}
+
+.bajo {
+	margin-bottom: 0px;
+}
+
+.peque {
+	width: 100%;
+	height: 100%;
+}
+
+.big_inner {
+	width: 100%;
+	height: 100%;
+}
+
+.grande {
+	width: 100%;
+	height: 100%;
+}
+
+.cascada_img {
+	margin-right: 2px;
+	margin-bottom: 2px;
+	float: left;
+}
+
+#cascada {
+	margin: auto;
+	width: 100%;
+}
+
+.galery_cont, .column, #cascada {
+	margin-bottom: 100px;
+}
+
+.article {
+	width: 750px;
+	margin: auto;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.art {
+	width: 100%;
+}
+
+.ver {
+	width: 95px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #aacd3f;
+    border-radius: 3px 0px 0px 0px;
+}
+
+.text {
+	float: left;
+    margin-right: 5px;
+    color: #f7f7f7;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	margin-left: 8px;
+}
+
+.flecha {
+	float: left;
+    position: relative;
+    top: 6px;
+}
+
+.cuadro {
+	background-color: #fff;
+	width: 690px;
+	margin: auto;
+	padding: 50px 60px;
+	margin-bottom: 20px;
+	border: 1px solid #ebebeb;
+	position: relative;
+}
+
+.titulo {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.name {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.date {
+	font-family: 'Open Sans Italic', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #aeb9c0;
+	margin-bottom: 40px;
+}
+
+.nota {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #000000;
+	margin-bottom: 25px;
+}
+
+.seguir {
+	width: 110px;
+	position: absolute;
+	bottom: 20px;
+	right: 60px;
+}
+
+.txt {
+	float: left;
+	margin-right: 8px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #aacd3f;
+}
+
+.sigue {
+	float: left;
+	position: relative;
+	top: 3px;
+}
+
+@media (max-width: 1160px) {
+	#inner_cont {
+	    width: 850px;
+	}
+
+	.galery_cont {
+	    height: 850px;
+	}
+
+	.big {
+	    width: 49.88%;
+	    height: 49.88%;
+	}
+
+	.small {
+	    width: 49.76%;
+	    height: 49.76%;
+	}
+}
+
+@media (max-width: 860px) {
+	#inner_cont {
+	    width: 750px;
+	}
+
+	.galery_cont {
+	    height: 750px;
+	}
+
+	.big {
+	    width: 49.85%;
+	    height: 49.85%;
+	}
+
+	.small {
+	    width: 49.71%;
+	    height: 49.71%;
+	}
+
+	.item {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#main_inner {
+	    width: 773px;
+	}
+
+	.cuadro {
+		width: 668px;
+		padding: 50px 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	#inner_cont {
+	    width: 600px;
+	}
+
+	.galery_cont {
+	    height: 600px;
+	}
+
+	.big {
+	    width: 49.83%;
+	    height: 49.83%;
+	}
+
+	.small {
+	    width: 49.67%;
+	    height: 49.67%;
+	}
+
+	.item {
+	    padding-left: 4px;
+	    padding-right: 4px;
+	}
+
+	#main_inner {
+	    width: 620px;
+	}
+
+	.article {
+		width: 100%;
+	}
+
+	.cuadro {
+		width: 96%;
+		padding: 30px 11px;
+	}
+
+	.seguir {
+		right: 20px;
+	}
+}
+
+@media (max-width: 620px) {
+	#main {
+		height: 70px;
+	}
+
+	#main_inner {
+	    width: 440px;
+	    height: 50px;
+	}
+
+	.item {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    margin-bottom: 10px;
+	}
+
+	#videos {
+	    padding-left: 10px;
+	    padding-right: 23px;
+	}
+
+	#gifs {
+		padding-left: 39px;
+		padding-right: 39px;
+	}
+
+	#indepths {
+		padding-right: 0px;
+		padding-left: 35px;
+		border: none;
+	}
+
+	#insights {
+		padding-left: 33px;
+		padding-right: 32px;
+	}
+
+	#inner_cont {
+	    width: 460px;
+	}
+
+	.galery_cont {
+	    height: 460px;
+	}
+
+	.big {
+	    width: 49.78%;
+	    height: 49.78%;
+	}
+
+	.small {
+	    width: 49.56%;
+	    height: 49.56%;
+	}
+
+	#content {
+		padding-bottom: 1px;
+	}
+}
+
+@media (max-width: 480px) {
+	#main {
+	    height: 100px;
+	}
+	#main_inner {
+	    width: 240px;
+	    height: 75px;
+	}
+
+	.item {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+
+	#videos {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+
+	#gifs {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#indepths {
+		padding-right: 4px;
+		padding-left: 0px;
+		border-right: 1px solid #fff;
+	}
+
+	#insights {
+		padding-left: 23px;
+		padding-right: 15px;
+	}
+
+	#disfraces {
+		padding-left: 15px;
+	}
+
+	#campañas {
+		padding-left: 12px;
+		padding-right: 0px;
+		border: none;
+	}
+
+	#infografias {
+		padding-right: 0px;
+		border: none;
+	}
+
+	#inner_cont {
+	    width: 300px;
+	}
+
+	.galery_cont {
+	    height: 1200px;
+	}
+
+	.big {
+	    width: 99.78%;
+	    height: 24.89%;
+	    margin-right: 0px;
+	    margin-bottom: 2px;
+	}
+
+	.small {
+	    width: 49.56%;
+	    height: 49.56%;
+	}
+}
+
+.fancybox-wrap, .fancybox-desktop, .fancybox-type-image, .fancybox-opened {
+	top: 100px!important;
+}
