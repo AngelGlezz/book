@@ -265,12 +265,19 @@
 
 	.cont_img_postal {
 		width: 100%;
-		height: none;
+		height: 140%;
 	}
 
 	.close {
 	    right: 5px;
 	    position: absolute;
+	}
+}
+
+@media (max-width: 400px) {
+	.cont_img_postal {
+		width: 100%;
+		height: 120%;
 	}
 }
 
