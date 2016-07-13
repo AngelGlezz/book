@@ -10,7 +10,9 @@ $(document).ready(function(){
 	    })
 	});
 
-	$(".show").fancybox();
+	$(".show").fancybox({
+		'centerOnScroll': true
+	});
     $(".show").attr('rel', 'lb_postal lb_gif lb_video lb_disfraz').fancybox({padding: 0});
 
 	$(".item").click(function(){

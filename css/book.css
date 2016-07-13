@@ -1,6 +1,6 @@
 #gif, #cascada, #indepth, #video, #campaña, #insight, #disfraz {
 	display: none;
-}/**/
+}
 
 #page {
 	width: 100%;
@@ -263,6 +263,10 @@
 	float: left;
 	position: relative;
 	top: 3px;
+}
+
+.ui-loader, .ui-corner-all, .ui-body-a, .ui-loader-default {
+	display: none!important;
 }
 
 @media (max-width: 1160px) {
