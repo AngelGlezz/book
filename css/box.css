@@ -1,5 +1,5 @@
 .backg {
-	background-color: rgba(0,0,0,.7);
+	background-color: rgba(17,20,27,.8);
 	position: fixed;
 	z-index: 1;
 	width: 100%;
@@ -27,6 +27,8 @@
 	width: 850px;
 	float: left;
 	position: relative;
+	overflow-y: scroll;
+    height: 636px;
 }
 
 .back {
@@ -258,14 +260,14 @@
 
 	.inner_max {
 		width: 100%;
-		height: none;
+		height: auto;
 		float: none;
 		margin: auto;
 	}
 
 	.cont_img_postal {
 		width: 100%;
-		height: 140%;
+		height: 60%;
 	}
 
 	.close {
@@ -277,7 +279,7 @@
 @media (max-width: 400px) {
 	.cont_img_postal {
 		width: 100%;
-		height: 120%;
+		height: 60%;
 	}
 }
 

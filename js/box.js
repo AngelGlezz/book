@@ -9,7 +9,7 @@ $(document).ready(function(){
 		var inner_c = '</div>';
 		$(".backg").append(backg+inner+change+inner_c+backg_c);
 		for (var i =1; i <= ele; i++) {
-			var image = '<div class="image"><img class="img" src="images/infografias/'+title+'/'+i+'.jpg"></div>';
+			var image = '<div class="image"><img class="img" src="images/postales/'+title+'/'+i+'.jpg"></div>';
 			$("#inner-box").append(image);
 		};
 		$(".backg").show();
@@ -32,7 +32,7 @@ $(document).ready(function(){
 		$(".todos").show();
 		$(".inner").html("");
 		var i = 1;
-		var postal = '<div class="cont_img_postal"><img class="img_postal" src="images/infografias/'+title+'/'+i+'.jpg"></div>';
+		var postal = '<div class="cont_img_postal"><img class="img_postal" src="images/postales/'+title+'/'+i+'.jpg"></div>';
 		$("#inner-box").append(postal);
 		$(".back").show();
 		$(".next").show();
@@ -46,7 +46,7 @@ $(document).ready(function(){
 		$(".individual").hide();
 		$(".inner").html("");
 		var i = 1;
-		var postal = '<div class="cont_img_postal"><img class="img_postal" src="images/infografias/'+title+'/'+i+'.jpg"></div>';
+		var postal = '<div class="cont_img_postal"><img class="img_postal" src="images/postales/'+title+'/'+i+'.jpg"></div>';
 		$("#inner-box").append(postal);
 		$(".todos").hide();
 		$(".back").hide();
@@ -63,7 +63,7 @@ $(document).ready(function(){
 		$(".todos").hide();
 		$(".individual").show();
 		for (var i =1; i <= ele; i++) {
-			var image = '<div class="image"><img class="img" title="'+title+'"src="images/infografias/'+title+'/'+i+'.jpg"></div>';
+			var image = '<div class="image"><img class="img" title="'+title+'"src="images/postales/'+title+'/'+i+'.jpg"></div>';
 			$("#inner-box").append(image);
 		};
 		$(".back").hide();
@@ -81,7 +81,7 @@ $(document).ready(function(){
 		} else {
 			i = 1;
 		}
-		$(".img_postal").attr('src', 'images/infografias/'+title+'/'+i+'.jpg');
+		$(".img_postal").attr('src', 'images/postales/'+title+'/'+i+'.jpg');
 	};
 
 	function prev() {
@@ -92,7 +92,7 @@ $(document).ready(function(){
 		} else {
 			i = ele;
 		}
-		$(".img_postal").attr('src', 'images/infografias/'+title+'/'+i+'.jpg');
+		$(".img_postal").attr('src', 'images/postales/'+title+'/'+i+'.jpg');
 	};
 
 	var ancho = $(window).width();
