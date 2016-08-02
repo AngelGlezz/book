@@ -12,9 +12,10 @@ $(document).ready(function(){
 			var image = '<div class="image"><img class="img" src="images/postales/'+title+'/'+i+'.jpg"></div>';
 			$("#inner-box").append(image);
 		};
+		$(".img").click(individual);
 		$(".backg").show();
 		$(".close").click(cerrar);
-		$(".individual").click(individual);
+		$(".individual").click(individualb);
 		$(".todos").click(todos);
 		$(".back").click(prev);
 		$(".next").click(next);
@@ -27,11 +28,40 @@ $(document).ready(function(){
 	};
 
 	function individual(){
+		var str = $(this).attr('src');
+		var element = str.split("/");
+		var item_img = element[3];
+		var img = item_img.split(".");
+		var i = img[0];
 		var title = $(".inner").attr('title');
 		$(".individual").hide();
 		$(".todos").show();
 		$(".inner").html("");
+		var postal = '<div class="cont_img_postal"><img class="img_postal" src="images/postales/'+title+'/'+i+'.jpg"></div>';
+		$("#inner-box").append(postal);
+		$(".back").show();
+		$(".next").show();
+		$(".content").addClass('content_max');
+		$(".outer").addClass('content_max');
+		$(".inner").addClass('inner_max');
+	};
+
+		$(document).keyup(function(e){
+			if (e.keyCode == 37) {
+				prev();
+			} else if (e.keyCode == 39) {
+				next();
+			} else if (e.keyCode == 27) {
+				cerrar();
+			}
+		});
+
+	function individualb(){
 		var i = 1;
+		var title = $(".inner").attr('title');
+		$(".individual").hide();
+		$(".todos").show();
+		$(".inner").html("");
 		var postal = '<div class="cont_img_postal"><img class="img_postal" src="images/postales/'+title+'/'+i+'.jpg"></div>';
 		$("#inner-box").append(postal);
 		$(".back").show();
@@ -72,31 +102,41 @@ $(document).ready(function(){
 		$(".outer").removeClass('content_max');
 		$(".inner").removeClass('inner_max');
 	};
-	var i = 1;
+
 	function next() {
+		var strn = $(".img_postal").attr('src');
+		var elementn = strn.split("/");
+		var item_imgn = elementn[3];
+		var imgn = item_imgn.split(".");
+		var a = parseInt(imgn[0]);
 		var ele = $(".inner").attr('ele');
 		var title = $(".inner").attr('title');
-		if (i < ele) {
-			i += 1;
+		if (a < ele) {
+			a += 1;
 		} else {
-			i = 1;
+			a = 1;
 		}
-		$(".img_postal").attr('src', 'images/postales/'+title+'/'+i+'.jpg');
+		$(".img_postal").attr('src', 'images/postales/'+title+'/'+a+'.jpg');
+
 	};
 
 	function prev() {
+		var strn = $(".img_postal").attr('src');
+		var elementn = strn.split("/");
+		var item_imgn = elementn[3];
+		var imgn = item_imgn.split(".");
+		var b = parseInt(imgn[0]);
 		var ele = $(".inner").attr('ele');
 		var title = $(".inner").attr('title');
-		if (i > 1) {
-			i -= 1;
+		if (b > 1) {
+			b -= 1;
 		} else {
-			i = ele;
+			b = ele;
 		}
-		$(".img_postal").attr('src', 'images/postales/'+title+'/'+i+'.jpg');
+		$(".img_postal").attr('src', 'images/postales/'+title+'/'+b+'.jpg');
 	};
 
 	var ancho = $(window).width();
-	console.log(ancho);
 
 	if (ancho <= 480) {
 		$(".box").click(movil);
@@ -109,10 +149,13 @@ $(document).ready(function(){
 		$(".backg").bind("swiperight", function(event){
 			prev();
 		});
-	}
+	}	
 
-
+	
 });
+
+
+
 
 
 
