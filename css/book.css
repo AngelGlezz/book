@@ -308,7 +308,7 @@
 	display: block;
 }
 
-.img_referente img {
+.img_referente img, .img_referente iframe {
 	width: 100%;
 }
 
