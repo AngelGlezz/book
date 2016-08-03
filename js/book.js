@@ -162,4 +162,10 @@ $(document).ready(function(){
       columnWidth: 0,
       fitWidth: true
     });
+
+    $('.seguir').click(function(){
+    	$(this).parent('.cuadro').find('.nota').css('height', 'auto');
+    	$(this).parent('.cuadro').find('.nota').find('p').show('slow');
+    	$(this).hide();
+    });
 });

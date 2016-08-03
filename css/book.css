@@ -268,6 +268,8 @@
 	font-size: 14px;
 	color: #000000;
 	margin-bottom: 25px;
+	height: 15%;
+	overflow: hidden;
 }
 
 .seguir {
@@ -275,6 +277,7 @@
 	position: absolute;
 	bottom: 20px;
 	right: 60px;
+	cursor: pointer;
 }
 
 .txt {
@@ -290,6 +293,23 @@
 	float: left;
 	position: relative;
 	top: 3px;
+}
+
+.img_referente {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.nota p {
+	display: none;
+}
+
+.nota p:first-child {
+	display: block;
+}
+
+.img_referente img {
+	width: 100%;
 }
 
 .ui-loader, .ui-corner-all, .ui-body-a, .ui-loader-default {
@@ -613,6 +633,10 @@
 	    width: 49.56%;
 	    height: 49.56%;
 	}
+	.nota {
+		height: 24%;
+	}
+	
 }
 
 .fancybox-wrap, .fancybox-desktop, .fancybox-type-image, .fancybox-opened {
