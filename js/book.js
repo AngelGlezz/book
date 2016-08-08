@@ -10,8 +10,10 @@ $(document).ready(function(){
 	    })
 	});
 
-	$(".show").fancybox();
-    $(".show").attr('rel', 'lb_postal lb_gif lb_video lb_disfraz').fancybox({padding: 0});
+	$(".show").fancybox({
+		'centerOnScroll': true
+	});
+    $(".show").attr('rel', 'lb_info lb_gif lb_video lb_disfraz').fancybox({padding: 0});
 
 	$(".item").click(function(){
 	    var id = $(this).attr('id');
@@ -22,7 +24,7 @@ $(document).ready(function(){
 	    		$("#indepth").hide();
 	    		$("#video").hide();
 	    		$("#campaña").hide();
-	    		$("#insight").hide();
+	    		$("#blog").hide();
 	    		$("#disfraz").hide();
 	    		$("#postal").show();
 	    		$("#postales").removeClass('disable').addClass('enable');
@@ -31,7 +33,7 @@ $(document).ready(function(){
 	    		$("#indepths").removeClass('enable').addClass('disable');
 	    		$("#videos").removeClass('enable').addClass('disable');
 	    		$("#campañas").removeClass('enable').addClass('disable');
-	    		$("#insights").removeClass('enable').addClass('disable');
+	    		$("#blogs").removeClass('enable').addClass('disable');
 	    		$("#disfraces").removeClass('enable').addClass('disable');
 	    		$(".show_postal").addClass('show');
 	    		$(".show_gif").removeClass('show');
@@ -44,7 +46,7 @@ $(document).ready(function(){
 	    		$("#indepth").hide();
 	    		$("#video").hide();
 	    		$("#campaña").hide();
-	    		$("#insight").hide();
+	    		$("#blog").hide();
 	    		$("#disfraz").hide();
 	    		$("#postal").hide();
 	    		$("#gifs").removeClass('disable').addClass('enable');
@@ -53,7 +55,7 @@ $(document).ready(function(){
 	    		$("#indepths").removeClass('enable').addClass('disable');
 	    		$("#videos").removeClass('enable').addClass('disable');
 	    		$("#campañas").removeClass('enable').addClass('disable');
-	    		$("#insights").removeClass('enable').addClass('disable');
+	    		$("#blogs").removeClass('enable').addClass('disable');
 	    		$("#disfraces").removeClass('enable').addClass('disable');
 	    		$(".show_postal").removeClass('show');
 	    		$(".show_gif").addClass('show');
@@ -61,7 +63,7 @@ $(document).ready(function(){
 	    		$(".show_disfraz").removeClass('show');
 	    	break;
 	    	case 'infografias':
-	    		$("#postal, #gif, #indepth, #video, #campaña, #insight, #disfraz").hide();
+	    		$("#postal, #gif, #indepth, #video, #campaña, #blog, #disfraz").hide();
 	    		$("#cascada").show();
 	    		$('#cascada').imagesLoaded(function(){
 					$('#cascada').masonry({
@@ -79,11 +81,11 @@ $(document).ready(function(){
 	    		$("#indepths").removeClass('enable').addClass('disable');
 	    		$("#videos").removeClass('enable').addClass('disable');
 	    		$("#campañas").removeClass('enable').addClass('disable');
-	    		$("#insights").removeClass('enable').addClass('disable');
+	    		$("#blogs").removeClass('enable').addClass('disable');
 	    		$("#disfraces").removeClass('enable').addClass('disable');
 	    	break;
 	    	case 'indepths':
-	    		$("#postal, #gif, #cascada, #video, #campaña, #insight, #disfraz").hide();
+	    		$("#postal, #gif, #cascada, #video, #campaña, #blog, #disfraz").hide();
 	    		$("#indepth").show();
 	    		$("#infografias").removeClass('enable').addClass('disable');
 	    		$("#gifs").removeClass('enable').addClass('disable');
@@ -91,11 +93,11 @@ $(document).ready(function(){
 	    		$("#indepths").removeClass('disable').addClass('enable');
 	    		$("#videos").removeClass('enable').addClass('disable');
 	    		$("#campañas").removeClass('enable').addClass('disable');
-	    		$("#insights").removeClass('enable').addClass('disable');
+	    		$("#blogs").removeClass('enable').addClass('disable');
 	    		$("#disfraces").removeClass('enable').addClass('disable');
 	    	break;
 	    	case 'videos':
-	    		$("#postal, #gif, #cascada, #indepth, #campaña, #insight, #disfraz").hide();
+	    		$("#postal, #gif, #cascada, #indepth, #campaña, #blog, #disfraz").hide();
 	    		$("#video").show();
 	    		$("#infografias").removeClass('enable').addClass('disable');
 	    		$("#gifs").removeClass('enable').addClass('disable');
@@ -103,7 +105,7 @@ $(document).ready(function(){
 	    		$("#indepths").removeClass('enable').addClass('disable');
 	    		$("#videos").removeClass('disable').addClass('enable');
 	    		$("#campañas").removeClass('enable').addClass('disable');
-	    		$("#insights").removeClass('enable').addClass('disable');
+	    		$("#blogs").removeClass('enable').addClass('disable');
 	    		$("#disfraces").removeClass('enable').addClass('disable');
 	    		$(".show_postal").removeClass('show');
 	    		$(".show_gif").removeClass('show');
@@ -111,7 +113,7 @@ $(document).ready(function(){
 	    		$(".show_disfraz").removeClass('show');
 	    	break;
 	    	case 'campañas':
-	    		$("#postal, #gif, #cascada, #indepth, #video, #insight, #disfraz").hide();
+	    		$("#postal, #gif, #cascada, #indepth, #video, #blog, #disfraz").hide();
 	    		$("#campaña").show();
 	    		$("#infografias").removeClass('enable').addClass('disable');
 	    		$("#gifs").removeClass('enable').addClass('disable');
@@ -119,23 +121,23 @@ $(document).ready(function(){
 	    		$("#indepths").removeClass('enable').addClass('disable');
 	    		$("#videos").removeClass('enable').addClass('disable');
 	    		$("#campañas").removeClass('disable').addClass('enable');
-	    		$("#insights").removeClass('enable').addClass('disable');
+	    		$("#blogs").removeClass('enable').addClass('disable');
 	    		$("#disfraces").removeClass('enable').addClass('disable');
 	    	break;
-	    	case 'insights':
+	    	case 'blogs':
 	    		$("#postal, #gif, #cascada, #indepth, #video, #campaña, #disfraz").hide();
-	    		$("#insight").show();
+	    		$("#blog").show();
 	    		$("#infografias").removeClass('enable').addClass('disable');
 	    		$("#gifs").removeClass('enable').addClass('disable');
 	    		$("#postales").removeClass('enable').addClass('disable');
 	    		$("#indepths").removeClass('enable').addClass('disable');
 	    		$("#videos").removeClass('enable').addClass('disable');
 	    		$("#campañas").removeClass('enable').addClass('disable');
-	    		$("#insights").removeClass('disable').addClass('enable');
+	    		$("#blogs").removeClass('disable').addClass('enable');
 	    		$("#disfraces").removeClass('enable').addClass('disable');
 	    	break;
 	    	case 'disfraces':
-	    		$("#postal, #gif, #cascada, #indepth, #video, #campaña, #insight").hide();
+	    		$("#postal, #gif, #cascada, #indepth, #video, #campaña, #blog").hide();
 	    		$("#disfraz").show();
 	    		$("#infografias").removeClass('enable').addClass('disable');
 	    		$("#gifs").removeClass('enable').addClass('disable');
@@ -143,7 +145,7 @@ $(document).ready(function(){
 	    		$("#indepths").removeClass('enable').addClass('disable');
 	    		$("#videos").removeClass('enable').addClass('disable');
 	    		$("#campañas").removeClass('enable').addClass('disable');
-	    		$("#insights").removeClass('enable').addClass('disable');
+	    		$("#blogs").removeClass('enable').addClass('disable');
 	    		$("#disfraces").removeClass('disable').addClass('enable');
 	    		$(".show_postal").removeClass('show');
 	    		$(".show_gif").removeClass('show');
@@ -159,5 +161,11 @@ $(document).ready(function(){
       gutter: 0,
       columnWidth: 0,
       fitWidth: true
+    });
+
+    $('.seguir').click(function(){
+    	$(this).parent('.cuadro').find('.nota').css('height', 'auto');
+    	$(this).parent('.cuadro').find('.nota').find('p').show('slow');
+    	$(this).hide();
     });
 });
